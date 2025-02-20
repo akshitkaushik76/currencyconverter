@@ -8,7 +8,7 @@ function App() {
   const [from, setfrom] = useState("usd");
   const [to,setto] = useState("inr");
   const [convertedamount,setconvertedamount] = useState(0);
-  //using custom hook
+  //using custom hook it is a special hook
   const currencyinfo = usecurrencyinfo(from);//data is returned in form of objects so we have to require all keys
   const options =  Object.keys(currencyinfo)
   const swap = ()=>{
